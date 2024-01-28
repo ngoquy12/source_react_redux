@@ -8,9 +8,7 @@ import { reducers } from "./reducers/index.js";
 
 const store = createStore(reducers);
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <App />
+  </Provider>
 );
